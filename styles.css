@@ -1,0 +1,42 @@
+body{
+    font-family: 'Days One',sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height: 100vh;
+}
+h1{
+    text-align: center;
+}
+header,footer{
+    height: 140px;
+    background-color: aqua;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+aside{
+    width: 25%;
+    background-color: cadetblue;
+}
+main{
+    background-color: aquamarine;
+    width: 50%;
+}
+
+@media (max-width: 1200px) {
+    section{
+        flex-direction: column;
+    }
+    section>*{
+        width: 100%;
+        flex-grow: 1;
+        min-height: 100px;
+    }
+    main{
+        flex-grow: 4;
+    }
+}
